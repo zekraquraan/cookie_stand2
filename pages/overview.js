@@ -1,4 +1,4 @@
-import Hhead from '../components/Hhead';
+import Hhead from '../components/Head';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Login from './login';
