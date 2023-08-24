@@ -3,7 +3,9 @@ import CreateForm from './CreateForm';
 import Footer from './Footer';
 import Header from './Header';
 import ReportTable from './ReportTable';
-import Head from 'next/head';
+// import Head from 'next/head';
+import Hhead from './Head';
+
 
 const CookieStandAdmin = () => {
     
@@ -22,9 +24,8 @@ const CookieStandAdmin = () => {
 
     return (
         <>
-        <Head>
-          <title>Cookie Stand Admin</title>
-        </Head>
+      
+        <Hhead/>
         <main className='flex flex-col h-screen'>
           <Header />
           <CreateForm CreateLocation={CreateLocation} />

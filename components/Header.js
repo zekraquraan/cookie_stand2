@@ -1,25 +1,12 @@
 
-
-import Link from 'next/link'
-
-import { useAuth } from '@/contexts/authintication'
-
-const header = () => {
-  const { logout } = useAuth()
+function Header() {
   return (
-    <header
-      className='flex justify-between p-4'
-      style={{ backgroundColor: '#15B981' }}
-    >
-      <p className='text-3xl'>Cookie Stand Admin</p>
-      <Link href='#'>
-        Home
-      </Link>
-      <button className="p-2 text-white bg-gray-500 rounded" onClick={()=>logout()}>
-            logout
-          </button>
+    <header className="flex items-center justify-between p-4 bg-green-500 text-gray-50">
+
+      <h1 className="text-4xl">Cookie Stand Admin</h1>
+
     </header>
+
   )
 }
-
-export default header
+export default Header
